@@ -139,13 +139,13 @@ p{
 #about{
     position: relative;
     text-align: center;
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     background-color: #dddddd;
 }
 
 .about-container{
-    padding-top: 25vh;
+    padding-top: 35vh;
 }
 
 #about h2{
@@ -169,3 +169,39 @@ p{
     line-height: 2.5rem;
 }
 
+/* ======================PROJECTS====================== */
+#projects{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    background-color: #dddddd;
+}
+
+
+#projects h2{
+    font-size: 3rem;
+    color: #222222 !important;
+    font-weight: 500 !important;
+    margin-bottom: 3rem;
+}
+
+.projects-container{
+    margin: 0 auto;
+    font-size: 40px;
+    min-height: 300px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.projects-container img{
+    width: 100%;
+}
+
+.projects-container img:hover{
+    opacity: .5;
+}
