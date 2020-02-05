@@ -106,3 +106,66 @@ p{
 }
 
 /* ======================HEADER====================== */
+
+#header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #222222;
+}
+
+#welcome-section{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+#header h1 {
+ font-size: 5rem;
+ color: #dddddd !important;
+ font-weight: lighter !important;
+}
+
+#header p.hero-name {
+    float: right;
+    font-size: 2rem;
+    color: #dddddd !important;
+    font-weight: lighter !important;
+    text-transform: uppercase;
+   }
+
+/* ======================ABOUT====================== */
+
+#about{
+    position: relative;
+    text-align: center;
+    height: 75vh;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.about-container{
+    padding-top: 25vh;
+}
+
+#about h2{
+    font-size: 3rem;
+    color: #222222 !important;
+    font-weight: 500 !important;
+}
+
+#about .about-p{
+    text-align: center;
+    width: 100%;
+    margin-top: 1.3rem !important;
+}
+
+#about p.about-desc {
+    font-size: 1.4rem;
+    color: #222222 !important;
+    font-weight: 400 !important;
+    margin: 0 auto;
+    width: 70%;
+    line-height: 2.5rem;
+}
+
