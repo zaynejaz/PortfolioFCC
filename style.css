@@ -107,14 +107,14 @@ p{
 
 /* ======================HEADER====================== */
 
-#header{
+#welcome-section{
     position: relative;
     height: 100vh;
     width: 100%;
     background-color: #222222;
 }
 
-#welcome-section{
+#header{
     position: absolute;
     left: 10%;
     top: 40%;
@@ -188,7 +188,7 @@ p{
     margin-bottom: 3rem;
 }
 
-.projects-container{
+.project-tile{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -250,7 +250,6 @@ p{
     margin: auto;
     z-index: 9;
     transition: all .5s ease-in-out;
-    
 }
 
 .overlay{
@@ -315,8 +314,6 @@ p{
     transition: all .4s ease;
 }
 
-
-
 /* ======================FOOTER====================== */
 footer{
     position: relative;
@@ -352,20 +349,14 @@ footer .ft-copy{
     width: 100%;
 }
 
-
-
-
 .contact-sm{
     margin: 0 auto;
     width: 100%;
-    
     top: 0;
     background: none;
     min-height: 10vh;
     padding-top: 0rem;
-
 }
-
 
 .contact-sm ul{
     text-decoration: none;
@@ -396,8 +387,49 @@ footer .ft-copy{
     z-index: 1;
 }
 
-
 .contact-sm ul li a:hover{
     border: 2px solid #22a2e1;
     color: #fff;
 }
+
+
+/* ======================MEDIA QUERIES====================== */
+@media only screen and (max-width: 992px){
+    .code-img{
+        filter: grayscale(0%)
+    }
+    .project-info{
+        display: block;
+    }
+    .overlay{
+        display: flex;
+    }
+
+    .project-info .description{
+        font-size: .6rem;
+    }
+    .project-info .project-name{
+        font-size: 2rem;
+    }
+    .project-info .project-view{
+        font-size: .6rem;
+        margin: .8rem 1rem;
+        border: 2px solid transparent;
+        background: #22a2e1;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .project-tile{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 95%;
+        min-height: 175vh;    
+    }
+}
+
+
+
+
+
